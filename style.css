@@ -1,0 +1,148 @@
+body {
+    background: #111827;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.login-page,
+.dashboard {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: 360px;
+    background: #1f2937;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.login-card h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.login-description {
+    margin: 0 0 24px;
+    color: #cbd5e1;
+}
+
+.login-description2 {
+    margin: 0 90px 24px;
+    color: #f87171;
+    font-weight: bold;
+    align-self: center;
+}
+
+.login-card label {
+    display: block;
+    margin-bottom: 6px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    background: #0f172a;
+    color: white;
+    box-sizing: border-box;
+}
+
+.login-button{
+    width: 100%;
+    background: #691d1d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.generate {
+    display: inline-block;
+    background: #691d1d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover,
+.generate:hover {
+    background: #7f2a2a;
+}
+
+.login-error {
+    color: #f87171;
+    min-height: 22px;
+    margin-top: 12px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.machines,
+.alerts {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.machines {
+    flex: 1;
+}
+
+.alerts {
+    flex: 2;
+}
+
+.machine {
+    background: #0f766e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.machine_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dashboard {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard > .generate {
+    align-self: center;
+}
+

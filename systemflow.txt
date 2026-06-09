@@ -1,0 +1,45 @@
+"Real-time industrial plant noise isolation and acoustic source localization analytics system"
+
+
+      User Clicks     
+ Generate Noise Event 
+
+           |
+           v
+           
+ Noise Event(Random generated JSON)     
+
+           |
+           v
+
+ Noise Analysis       
+ - Machine ID         
+ - Fault Type         
+ - Noise Level        
+ - Severity           
+
+           |
+           v
+
+ Source Localization  
+ Identify Machine     
+ Causing the Noise    
+
+           |
+           v
+
+ Update Dashboard     
+ - Machine Turns Red  
+ - Alert Panel Update 
+
+           |
+           v
+
+ Store Event History  
+ (Database)           
+
+           |
+           v
+
+ Analytics Dashboard  
+ Charts & Statistics  

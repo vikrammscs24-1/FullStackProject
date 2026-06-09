@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Industrial Noise Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-page" id="loginPage">
+        <div class="login-card">
+            <h1>Sign In</h1>
+            <p class="login-description">Use your credentials to access the Industrial Noise Monitoring Dashboard.</p>
+            <p class="login-description2">Authorized Users Only</p>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="loginUser()" class="login-button">Login</button>
+            <p id="loginError" class="login-error"></p>
+        </div>
+    </div>
+
+    <div class="dashboard hidden" id="dashboardPage">
+        <h1>Industrial Noise Monitoring Dashboard</h1>
+        <button onclick="generateEvent()" class="generate">Generate Noise Event</button>
+
+        <div class="container">
+            <div class="machines">
+                <h2>Machines</h2>
+                <div class="machine_grid">
+                    <div class="machine" id="M1">M1</div>
+                    <div class="machine" id="M2">M2</div>
+                    <div class="machine" id="M3">M3</div>
+                    <div class="machine" id="M4">M4</div>
+                    <div class="machine" id="M5">M5</div>
+                    <div class="machine" id="M6">M6</div>
+                    <div class="machine" id="M7">M7</div>
+                    <div class="machine" id="M8">M8</div>
+                    <div class="machine" id="M9">M9</div>
+                    <div class="machine" id="M10">M10</div>
+                </div>
+            </div>
+
+            <div class="alerts">
+                <h2>Current Alert</h2>
+                <p>Machine: <span id="machineName">-</span></p>
+                <p>Fault: <span id="faultType">-</span></p>
+                <p>Severity: <span id="severityLevel">-</span></p>
+                <p>Noise Level: <span id="noiseLevel">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
