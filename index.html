@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- LOGIN PAGE -->
     <div class="login-page" id="loginPage">
         <div class="login-card">
             <h1>Sign In</h1>
@@ -20,11 +20,20 @@
         </div>
     </div>
 
+    <!-- DASHBOARD PAGE -->
     <div class="dashboard hidden" id="dashboardPage">
-        <h1>Industrial Noise Monitoring Dashboard</h1>
+        <div class="dashboard-header">
+            <h1>Industrial Noise Monitoring Dashboard</h1>
+            <div class="header-actions">
+                <span id="loggedInUser" class="user-badge"></span>
+                <button onclick="logoutUser()" class="logout-button">Logout</button>
+            </div>
+        </div>
+
         <button onclick="generateEvent()" class="generate">Generate Noise Event</button>
 
         <div class="container">
+            <!-- Machines -->
             <div class="machines">
                 <h2>Machines</h2>
                 <div class="machine_grid">
@@ -41,6 +50,7 @@
                 </div>
             </div>
 
+            <!-- Current Alert -->
             <div class="alerts">
                 <h2>Current Alert</h2>
                 <p>Machine: <span id="machineName">-</span></p>
@@ -49,9 +59,32 @@
                 <p>Noise Level: <span id="noiseLevel">-</span></p>
             </div>
         </div>
+
+        <!-- Event History -->
+        <div class="history-section">
+            <div class="history-header">
+                <h2>Event History</h2>
+                <button onclick="clearEvents()" class="clear-button">Clear All</button>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Machine</th>
+                            <th>Fault</th>
+                            <th>Severity</th>
+                            <th>Noise Level</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eventTableBody">
+                        <tr><td colspan="5" class="no-data">No events yet.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
